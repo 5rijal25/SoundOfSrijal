@@ -3,108 +3,257 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Srijal Pandey — Healing, Mentorship & Career Guidance</title>
-  <meta name="description" content="Srijal Pandey offers healing sessions, career guidance, and mentorship — available online and in person. Message on WhatsApp to book your first free conversation.">
+  <meta name="description" content="Srijal Pandey — Sound Healing, Career Guidance with Astrology, and Mentorship. Find clarity, healing, and direction through evidence-based wisdom and cosmic insight.">
+  <meta name="theme-color" content="#1B2F29">
+  <title>Aura Tech — Sound Healing, Career Guidance & Mentorship</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
+ 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
     body {
       font-family: 'Work Sans', sans-serif;
       background: #1B2F29;
       color: #EFEEE4;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem 1.5rem;
+      line-height: 1.6;
     }
-
-    .card {
-      background: #2E4A40;
-      border-radius: 24px;
-      padding: clamp(2.5rem, 6vw, 4rem) clamp(2rem, 6vw, 4rem);
-      max-width: 480px;
-      width: 100%;
+ 
+    /* Header / Hero */
+    header {
+      background: linear-gradient(135deg, #1B2F29 0%, #2E4A40 100%);
+      padding: clamp(3rem, 8vw, 5rem) 1.5rem;
       text-align: center;
-      box-shadow: 0 40px 80px -30px rgba(0,0,0,0.5);
+      border-bottom: 2px solid #D98C3D;
     }
-
-    .mark { width: 62px; height: 62px; margin: 0 auto 1.8rem; }
-
+ 
+    .mark {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 1.5rem;
+    }
+ 
     h1 {
       font-family: 'Fraunces', serif;
       font-weight: 500;
-      font-size: clamp(1.7rem, 4vw, 2.1rem);
-      line-height: 1.15;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      line-height: 1.1;
       color: #EFEEE4;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
     }
-
+ 
     .tagline {
       font-style: italic;
       font-family: 'Fraunces', serif;
-      font-size: 1.05rem;
+      font-size: 1.15rem;
       color: #D98C3D;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
     }
-
-    .divider { width: 48px; height: 2px; background: #D98C3D; border-radius: 2px; margin: 0 auto 2rem; }
-
-    .intro {
-      font-size: 0.98rem;
-      line-height: 1.6;
-      color: rgba(239,238,228,0.78);
-      margin-bottom: 2rem;
+ 
+    .divider {
+      width: 56px;
+      height: 2.5px;
+      background: #D98C3D;
+      border-radius: 2px;
+      margin: 0 auto 2rem;
     }
-
-    /* Primary action — WhatsApp */
+ 
+    /* Hero Intro */
+    .hero-intro {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: rgba(239,238,228,0.82);
+      max-width: 620px;
+      margin: 0 auto;
+    }
+ 
+    /* Main Container */
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+ 
+    /* CTA Button (WhatsApp) */
+    .cta-section {
+      margin: 3rem 0;
+      text-align: center;
+    }
+ 
     .whatsapp-btn {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 0.6rem;
-      width: 100%;
-      padding: 1.05rem 1.5rem;
+      gap: 0.7rem;
+      padding: 1.2rem 2rem;
       background: #D98C3D;
       color: #1B2F29;
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       font-weight: 600;
       text-decoration: none;
-      border-radius: 14px;
-      transition: background 0.2s ease, transform 0.1s ease;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(217, 140, 61, 0.25);
     }
-    .whatsapp-btn:hover { background: #EFB88C; }
-    .whatsapp-btn:active { transform: translateY(1px); }
-    .whatsapp-btn svg { width: 22px; height: 22px; flex-shrink: 0; }
-
-    .secondary {
-      margin-top: 1.3rem;
-      font-size: 0.92rem;
-      color: rgba(239,238,228,0.6);
+ 
+    .whatsapp-btn:hover {
+      background: #EFB88C;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(217, 140, 61, 0.35);
     }
-    .secondary a { color: #EFEEE4; text-decoration: none; font-weight: 500; }
-    .secondary a:hover { color: #EFB88C; }
-
-    .note {
-      margin-top: 2rem;
-      font-size: 0.85rem;
-      color: rgba(239,238,228,0.45);
-      line-height: 1.65;
+ 
+    .whatsapp-btn:active {
+      transform: translateY(0);
     }
-
-    .footer { margin-top: 2rem; font-size: 0.78rem; color: rgba(239,238,228,0.3); }
+ 
+    .whatsapp-btn svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+ 
+    /* Services Grid */
+    .services {
+      margin: 4rem 0;
+    }
+ 
+    .section-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.8rem, 4vw, 2.3rem);
+      font-weight: 500;
+      color: #EFEEE4;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+ 
+    .section-subtitle {
+      text-align: center;
+      color: #D98C3D;
+      font-style: italic;
+      margin-bottom: 2.5rem;
+      font-size: 1rem;
+    }
+ 
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+ 
+    .service-card {
+      background: #2E4A40;
+      border-radius: 20px;
+      padding: 2.2rem;
+      border-left: 5px solid #D98C3D;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+ 
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+ 
+    .service-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+ 
+    .service-card h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #EFEEE4;
+      margin-bottom: 0.8rem;
+    }
+ 
+    .service-card p {
+      color: rgba(239,238,228,0.75);
+      line-height: 1.7;
+      font-size: 0.98rem;
+    }
+ 
+    /* About Section */
+    .about {
+      background: #2E4A40;
+      border-radius: 20px;
+      padding: clamp(2rem, 6vw, 3.5rem);
+      margin: 4rem 0;
+      border-left: 5px solid #D98C3D;
+    }
+ 
+    .about h2 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.6rem, 4vw, 2rem);
+      font-weight: 500;
+      color: #EFEEE4;
+      margin-bottom: 1.2rem;
+    }
+ 
+    .about p {
+      color: rgba(239,238,228,0.78);
+      line-height: 1.8;
+      font-size: 1.02rem;
+      margin-bottom: 1rem;
+    }
+ 
+    /* Contact Section */
+    .contact {
+      margin: 4rem 0;
+      text-align: center;
+    }
+ 
+    .contact-info {
+      margin: 2rem 0;
+      font-size: 1.05rem;
+    }
+ 
+    .contact-info a {
+      color: #D98C3D;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+ 
+    .contact-info a:hover {
+      color: #EFB88C;
+      text-decoration: underline;
+    }
+ 
+    /* Footer */
+    footer {
+      background: #1B2F29;
+      border-top: 2px solid #D98C3D;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: rgba(239,238,228,0.4);
+      font-size: 0.88rem;
+      margin-top: 4rem;
+    }
+ 
+    /* Responsive */
+    @media (max-width: 768px) {
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+ 
+      header {
+        padding: 2rem 1.5rem;
+      }
+ 
+      .whatsapp-btn {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
-
-  <div class="card">
-
-    <!-- Sun mark -->
+ 
+  <!-- Header / Hero -->
+  <header>
     <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
       <circle cx="32" cy="32" r="12" fill="#D98C3D"/>
       <g stroke="#D98C3D" stroke-width="2.5" stroke-linecap="round">
@@ -118,37 +267,124 @@
         <line x1="19" y1="45" x2="14" y2="50"/>
       </g>
     </svg>
-
-    <h1>Srijal Pandey</h1>
-    <p class="tagline">Healing · Career Guidance · Mentorship</p>
-
+ 
+    <h1>Aura Tech</h1>
+    <p class="tagline">Sound Healing · Career Guidance · Mentorship</p>
     <div class="divider"></div>
-
-    <p class="intro">
-      The easiest way to reach me is on WhatsApp. Send a message any time and
-      I'll reply as soon as I can — no need to call.
+ 
+    <p class="hero-intro">
+      Find clarity through sound, wisdom through the stars, and direction through mentorship.
+      I work with the science of the mind and the knowledge of the cosmos to help you heal, grow, and thrive.
     </p>
-
-    <!-- Primary action: opens a WhatsApp chat -->
-    <a class="whatsapp-btn" href="https://wa.me/9779813452415" target="_blank" rel="noopener noreferrer">
-      <svg viewBox="0 0 24 24" fill="#1B2F29" aria-hidden="true">
-        <path d="M12 3C6.9 3 3 6.4 3 10.5c0 1.9.9 3.7 2.5 5-.1 1-.5 2.2-1.3 3.2 1.4-.2 2.8-.7 3.8-1.4 1.2.4 2.5.6 3.9.6 5.1 0 9-3.4 9-7.5S17.1 3 12 3z"/>
-      </svg>
-      Message me on WhatsApp
-    </a>
-
-    <p class="secondary">
-      Prefer email? <a href="mailto:Srijal.pandey525@gmail.com">Srijal.pandey525@gmail.com</a>
-    </p>
-
-    <p class="note">
-      Sessions available online and in person.<br>
-      Reach out to book your first free conversation.
-    </p>
-
-  </div>
-
-  <p class="footer">© 2026 Srijal Pandey</p>
-
+  </header>
+ 
+  <!-- Main Content -->
+  <main>
+ 
+    <!-- CTA -->
+    <section class="cta-section">
+      <a class="whatsapp-btn" href="https://wa.me/9779813452415?text=Hi%20Srijal%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 3C6.9 3 3 6.4 3 10.5c0 1.9.9 3.7 2.5 5-.1 1-.5 2.2-1.3 3.2 1.4-.2 2.8-.7 3.8-1.4 1.2.4 2.5.6 3.9.6 5.1 0 9-3.4 9-7.5S17.1 3 12 3z"/>
+        </svg>
+        Start a conversation on WhatsApp
+      </a>
+    </section>
+ 
+    <!-- Services -->
+    <section class="services">
+      <h2 class="section-title">My Services</h2>
+      <p class="section-subtitle">Three paths to clarity and healing</p>
+ 
+      <div class="service-grid">
+ 
+        <!-- Sound Healing -->
+        <div class="service-card">
+          <div class="service-icon">🔊</div>
+          <h3>Sound Healing</h3>
+          <p>
+            Sessions where I speak about mental health, wellness, and the power of sound to shift your inner state. 
+            I charge for my time and expertise — each session is tailored to your needs and comes from deep knowledge 
+            of how sound, breath, and presence can transform how you feel.
+          </p>
+        </div>
+ 
+        <!-- Career Guidance + Astrology -->
+        <div class="service-card">
+          <div class="service-icon">⭐</div>
+          <h3>Career Guidance + Astrology</h3>
+          <p>
+            Navigate your professional path with both grounded wisdom and cosmic insight. 
+            I blend practical career advice with astrological knowledge to help you understand your natural strengths, 
+            timing, and the opportunities aligned with your chart.
+          </p>
+        </div>
+ 
+        <!-- Mentorship -->
+        <div class="service-card">
+          <div class="service-icon">🧭</div>
+          <h3>Mentorship</h3>
+          <p>
+            For those struggling to find their path. Through ongoing mentorship, I help you clarify your values, 
+            overcome uncertainty, and step into the life you're meant to live. 
+            A space to be heard, guided, and believed in.
+          </p>
+        </div>
+ 
+      </div>
+    </section>
+ 
+    <!-- About -->
+    <section class="about">
+      <h2>About Srijal Pandey</h2>
+      <p>
+        I am a practitioner of sound healing, career guidance, and mentorship rooted in the belief that 
+        <strong>true power comes from unity</strong> — unity within yourself, with others, and with the world around you.
+      </p>
+      <p>
+        My work is informed by Nepal's rich cultural heritage, diverse wisdom traditions, and the lived experience 
+        of helping people find joy, healing, and direction in an increasingly complex world. 
+        Whether you're seeking to heal through sound, clarify your career path, or find mentorship to navigate life's uncertainty, 
+        I'm here to hold space for your transformation.
+      </p>
+      <p>
+        <em>Sessions available online and in person.</em>
+      </p>
+    </section>
+ 
+    <!-- Contact -->
+    <section class="contact">
+      <h2 class="section-title">Let's Talk</h2>
+      <p class="section-subtitle">The easiest way to reach me</p>
+      
+      <div class="contact-info">
+        <p>
+          <strong>WhatsApp:</strong> 
+          <a href="https://wa.me/9779813452415" target="_blank" rel="noopener noreferrer">
+            +977 9813452415
+          </a>
+        </p>
+        <p>
+          <strong>Email:</strong> 
+          <a href="mailto:Srijal.pandey525@gmail.com">
+            Srijal.pandey525@gmail.com
+          </a>
+        </p>
+      </div>
+ 
+      <p style="color: rgba(239,238,228,0.6); font-size: 0.95rem; margin-top: 2rem;">
+        Message me on WhatsApp anytime. I reply as soon as I can.<br>
+        Let's book your first free conversation.
+      </p>
+    </section>
+ 
+  </main>
+ 
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Srijal Pandey — Aura Tech</p>
+    <p style="margin-top: 0.5rem;">Healing through sound. Clarity through the stars. Direction through mentorship.</p>
+  </footer>
+ 
 </body>
 </html>
